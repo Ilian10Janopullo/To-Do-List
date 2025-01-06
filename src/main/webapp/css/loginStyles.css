@@ -1,0 +1,117 @@
+/* Divider between buttons */
+hr.button-divider {
+    border: none;
+    border-top: 2px solid #444; /* Subtle gray line */
+    margin: 20px 0;
+    width: 80%; /* Make it narrower for a more elegant separation */
+    align-self: center; /* Center it within the container */
+}
+
+/* General body styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e; /* Very dark gray for a clean look */
+    color: #eaeaea; /* Soft white for text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+/* Main container */
+.container {
+    width: 50%;
+    max-width: 400px;
+    background-color: #2a2a2a; /* Slightly lighter gray for contrast */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5); /* Strong shadow for depth */
+}
+
+/* Heading */
+h1 {
+    color: #ffb3b3; /* Soft pink for a welcoming touch */
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Divider between buttons */
+hr.button-divider {
+    border: none;
+    border-top: 2px solid #444; /* Subtle gray line */
+    margin: 20px 0;
+    width: 100%; /* Make it longer by adjusting the width */
+    align-self: center; /* Center it within the container */
+}
+
+
+/* Form styling */
+form p {
+    margin: 15px 0;
+    font-size: 1em;
+    color: #eaeaea;
+}
+
+/* Input fields */
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8f8e5; /* Warm cream color */
+    color: #4a0000; /* Dark red text for contrast */
+    font-size: 1em;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-top: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.3), 0 0 5px #ffb3b3; /* Subtle focus glow */
+}
+
+/* Submit button */
+form input[type="submit"] {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444; /* Neutral gray for buttons */
+    color: #ffb3b3; /* Soft pink text */
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ffb3b3; /* Soft pink background on hover */
+    color: #2a2a2a; /* Dark text on hover */
+    transform: scale(1.05); /* Subtle zoom */
+}
+
+/* "Go to Home" button styling */
+button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a4a4a; /* Dark gray background */
+    color: #eaeaea; /* Soft white text */
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ffb3b3; /* Soft pink background on hover */
+    transform: scale(1.05); /* Subtle zoom */
+}

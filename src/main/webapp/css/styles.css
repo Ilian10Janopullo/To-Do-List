@@ -1,0 +1,141 @@
+/* General body styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e; /* Very dark gray for better contrast */
+    color: #eaeaea; /* Soft white for text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+/* Main container */
+.container {
+    width: 70%;
+    max-width: 900px;
+    background-color: #2a2a2a; /* Slightly lighter gray for contrast */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5); /* Strong shadow for depth */
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    color: #ffb3b3; /* Soft pink for a friendly touch */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+/* Divider */
+hr {
+    border: none;
+    border-top: 2px solid #444; /* Subtle divider */
+    margin: 20px 0;
+}
+
+/* Form inputs */
+form input[type="text"] {
+    width: 70%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8f8e5; /* Warm cream color */
+    color: #4a0000; /* Dark red text for contrast */
+    font-size: 1em;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.3), 0 0 5px #ffb3b3; /* Subtle focus glow */
+}
+
+/* Buttons */
+form input[type="submit"],
+form input[type="button"] {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444; /* Neutral gray for buttons */
+    color: #ffb3b3; /* Soft pink text */
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover,
+form input[type="button"]:hover {
+    background-color: #ffb3b3; /* Soft pink background on hover */
+    color: #2a2a2a; /* Dark text on hover */
+    transform: scale(1.05); /* Subtle zoom */
+}
+
+/* Logout button specific styling */
+form input[type="submit"].logout {
+    background-color: #d9534f; /* Bootstrap-style danger red */
+    color: white;
+    padding: 12px 30px;
+}
+
+form input[type="submit"].logout:hover {
+    background-color: #c9302c; /* Slightly darker on hover */
+    transform: scale(1.1);
+}
+
+/* List styling */
+ol {
+    padding: 0;
+    margin: 20px 0;
+    list-style-type: decimal;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+ol li {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f8f8e5; /* Warm cream background for list items */
+    color: #4a0000; /* Dark red text */
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between; /* Align activity text and buttons */
+    align-items: center; /* Center vertically */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ol li:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Buttons container in each list item */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* Align buttons to the right */
+}
+
+/* Style the Remove button */
+form input[value="Remove"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+form input[value="Remove"]:hover {
+    background-color: #c0392b;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    color: #777;
+    font-size: 0.9em;
+}
