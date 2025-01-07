@@ -5,7 +5,7 @@
          version="5.0">
 
     <welcome-file-list>
-        <welcome-file>login-page.jsp</welcome-file>
+        <welcome-file>protected/to-do.jsp</welcome-file>
     </welcome-file-list>
 
     <resource-ref>
@@ -28,17 +28,6 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>AddActivityServlet</servlet-name>
-        <servlet-class>Controllers.AddActivityServlet</servlet-class>
-    </servlet>
-
-    <!-- Servlet Mapping -->
-    <servlet-mapping>
-        <servlet-name>AddActivityServlet</servlet-name>
-        <url-pattern>/AddActivityServlet</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>Controllers.LogoutServlet</servlet-class>
     </servlet>
@@ -50,14 +39,14 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>RemoveActivityServlet</servlet-name>
-        <servlet-class>Controllers.RemoveActivityServlet</servlet-class>
+        <servlet-name>ManageActivities</servlet-name>
+        <servlet-class>Controllers.ManageActivities</servlet-class>
     </servlet>
 
     <!-- Servlet Mapping -->
     <servlet-mapping>
-        <servlet-name>RemoveActivityServlet</servlet-name>
-        <url-pattern>/RemoveActivityServlet</url-pattern>
+        <servlet-name>ManageActivities</servlet-name>
+        <url-pattern>/ManageActivities</url-pattern>
     </servlet-mapping>
 
     <filter>
@@ -69,4 +58,12 @@
         <url-pattern>/protected/*</url-pattern>
     </filter-mapping>
 
+    <filter>
+        <filter-name>AuthenticationFilter2</filter-name>
+        <filter-class>Filter.AuthenticationFilter2</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthenticationFilter2</filter-name>
+        <url-pattern>/protectedPage/*</url-pattern>
+    </filter-mapping>
 </web-app>

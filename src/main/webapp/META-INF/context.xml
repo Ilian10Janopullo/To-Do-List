@@ -8,5 +8,5 @@
               username="Ilian"
               password="Ilian"
               driverClassName="com.mysql.cj.jdbc.Driver"
-              url="jdbc:mysql://localhost:3306/users?useSSL=false&amp;serverTimezone=UTC" />
+              url="jdbc:mysql://localhost:3306/users?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC" />
 </Context>

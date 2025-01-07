@@ -19,7 +19,8 @@
     <div class="container">
         <h1>To-Do Activities</h1><hr />
 
-        <form method="get" action="${pageContext.request.contextPath}/AddActivityServlet">
+        <form method="post" action="${pageContext.request.contextPath}/ManageActivities">
+            <input type="hidden" name="command" value="addActivities">
             <p>Add new activity to the list:</p>
             <input type="text" name="activity">
             <input type="submit" value="Add">
@@ -31,8 +32,9 @@
                 <li>
                     <span class="activity-text">${activity}</span>
                     <div class="buttons">
-                        <form method="post" action="${pageContext.request.contextPath}/RemoveActivityServlet">
-                            <input type="hidden" name="remove" value="${activity}">
+                        <form method="post" action="${pageContext.request.contextPath}/ManageActivities">
+                            <input type="hidden" name="command" value="removeActivities">
+                            <input type="hidden" name="activityToRemove" value="${activity}">
                             <input type="submit" value="Remove">
                         </form>
                     </div>

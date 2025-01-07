@@ -96,22 +96,3 @@ form input[type="submit"]:hover {
     color: #2a2a2a; /* Dark text on hover */
     transform: scale(1.05); /* Subtle zoom */
 }
-
-/* "Go to Home" button styling */
-button {
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4a4a4a; /* Dark gray background */
-    color: #eaeaea; /* Soft white text */
-    font-size: 1em;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #ffb3b3; /* Soft pink background on hover */
-    transform: scale(1.05); /* Subtle zoom */
-}

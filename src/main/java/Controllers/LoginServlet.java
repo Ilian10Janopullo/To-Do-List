@@ -36,10 +36,10 @@ public class LoginServlet extends HttpServlet {
             newSession.setMaxInactiveInterval(60*10);
             newSession.setAttribute("user", new User(request.getParameter("username"), request.getParameter("password")));
 
-            RequestDispatcher dispatcher = request.getRequestDispatcher("protected/to-do.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("ManageActivities");
             dispatcher.forward(request, response);
         } else {
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/login-page.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("protectedPage/login-page.jsp");
             PrintWriter out = response.getWriter();
             out.println("<font color=red>Either username or password is wrong.</font>");
             dispatcher.forward(request,response);

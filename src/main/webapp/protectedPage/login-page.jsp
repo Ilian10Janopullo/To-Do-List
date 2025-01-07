@@ -15,9 +15,8 @@
         <p>Password: <input type="password" name="password" /></p>
         <input type="submit" value="Login">
     </form>
-    <hr class="button-divider" />
 
-    <button onclick="window.location.href='${pageContext.request.contextPath}/protected/to-do.jsp'">Already Have A Session?</button>
+
 
 </div>
 </body>

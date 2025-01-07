@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Web-Student-Tracker</artifactId>
+    <artifactId>To-Do-List</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Web-Student-Tracker</name>
+    <name>To-Do-List</name>
     <packaging>war</packaging>
 
     <properties>
